@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Time Complexity</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+        }
+        .grid {
+            display: grid;
+            grid-template-rows: 1fr 7fr;
+            height: 100%;
+        }
+
+        .grid div {
+            margin: 5px;
+            border: solid black 2pt;
+        }
+
+        .title {
+            font-size: 32pt;
+            text-align: center;
+        }
+
+        .center {
+            text-align: center;
+        }
+
+        .center-img {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 50%;
+        }
+        .mid {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css" integrity="sha512-EZLkOqwILORob+p0BXZc+Vm3RgJBOe1Iq/0fiI7r/wJgzOFZMlsqTa29UEl6v6U6gsV4uIpsNZoV32YZqrCRCQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <div class="grid">
+        <div class="title">Time Complexity</div>
+        <div class="mid">
+            <h2 class="center">Big Oh Notation</h2>
+            <p>In computer science and mathematics, the idea of "Big Oh" is important. It shows the worst-case scenario for an algorithm's execution time and serves as the upper bound of an algorithm's temporal complexity. Programmers can evaluate and compare various algorithms to ascertain their efficacy by knowing Big Oh. This information enables the selection of the best algorithms for particular jobs, resulting in more effective and quicker software development. Overall, Big Oh is essential for streamlining computations and enhancing performance across a range of disciplines.</p>
+            <h2 class="center">Big Omega Notation</h2>
+            <p>A key idea in computer science is Big Omega, commonly referred to as "notation," which expresses the lowest bound of an algorithm's execution time. It indicates the most effective usage of the algorithm. Big Omega assists programmers with selecting the best algorithms to utilize in various situations by clearly describing how an algorithm works. By comparing and analyzing algorithms using this notation, we may improve our code and provide more effective solutions.</p>
+            <h2 class="center">Big Theta Notation</h2>
+            <p>In computer science, the term "Big Theta" is used to represent the asymptotic behavior of functions. It denotes a tight limitation on a function's development rate, denoting both an upper and lower limit. To put it another way, it makes it very evident how a function works as the size of the input rises. Big Theta is a crucial tool for evaluating algorithms and figuring out how effective they are. This notation enables us to choose the best method for a given problem in a well-informed manner.</p>
+            <img class="center-img" src="data:image/jpeg;base64,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"/>
+            <a href="page2" class="center">Page 2</a>
+        </div>
+    </div>
+
+</body>
+</html>

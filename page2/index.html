@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Time Complexity</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+        }
+        .grid {
+            display: grid;
+            grid-template-rows: 1fr 7fr;
+            height: 100%;
+        }
+
+        .grid div {
+            margin: 5px;
+            border: solid black 2pt;
+        }
+
+        .title {
+            font-size: 32pt;
+            text-align: center;
+        }
+
+        .center {
+            text-align: center;
+        }
+
+        .center-img {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 50%;
+        }
+        .mid {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css" integrity="sha512-EZLkOqwILORob+p0BXZc+Vm3RgJBOe1Iq/0fiI7r/wJgzOFZMlsqTa29UEl6v6U6gsV4uIpsNZoV32YZqrCRCQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <div class="grid">
+        <div class="title">Time Complexity</div>
+        <div class="mid">
+            <p>
+                Asymptotic notation and time complexity are fundamental concepts in the field of computer science that help us analyze the efficiency of algorithms. Time complexity refers to the amount of time an algorithm takes to run, while asymptotic notation provides a concise way to describe this behavior.
+
+One commonly used notation is Big O notation, which represents the upper bound of an algorithm's running time. It allows us to compare different algorithms and determine their efficiency relative to each other. For example, if an algorithm has a time complexity of O(n), it means that its running time grows linearly with the input size.
+
+Another important concept is Omega notation, which represents the lower bound of an algorithm's running time. It provides information about the best-case scenario for an algorithm. If an algorithm has a time complexity of Ω(n^2), it means that its running time will be at least quadratic.
+
+Lastly, Theta notation combines both upper and lower bounds to provide a tight range for an algorithm's running time. If an algorithm has a time complexity of Θ(n), it means that its running time grows linearly with the input size, but not faster or slower.
+
+Understanding asymptotic notation and time complexity is crucial for designing efficient algorithms and optimizing code performance. By analyzing these factors, we can make informed decisions about which algorithms to use in various scenarios and ensure our programs run as efficiently as possible.
+            </p>
+            <p>sources:</p>
+            <ul>
+                <li><a href="https://www.freecodecamp.org/news/big-omega-notation/">https://www.freecodecamp.org/news/big-omega-notation/</a></li>
+                <li><a href="https://www.freecodecamp.org/news/big-theta-and-asymptotic-notation-explained/">https://www.freecodecamp.org/news/big-theta-and-asymptotic-notation-explained/</a></li>
+
+                <li><a href="https://www.geeksforgeeks.org/difference-between-big-oh-big-omega-and-big-theta/">https://www.geeksforgeeks.org/difference-between-big-oh-big-omega-and-big-theta/</a></li>
+
+            </ul>
+            <a href="/index.html" class="center">Page 1</a>
+        </div>
+    </div>
+
+</body>
+</html>
